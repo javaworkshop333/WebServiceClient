@@ -42,22 +42,4 @@ public interface SoapCalculator {
         @WebParam(name = "arg1", targetNamespace = "")
         int arg1);
 
-    /**
-     * 
-     * @param arg1
-     * @param arg0
-     * @return
-     *     returns boolean
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "login", targetNamespace = "http://demo.tutorial.com/", className = "com.soap.wsClient.Login")
-    @ResponseWrapper(localName = "loginResponse", targetNamespace = "http://demo.tutorial.com/", className = "com.soap.wsClient.LoginResponse")
-    @Action(input = "http://demo.tutorial.com/SoapCalculator/loginRequest", output = "http://demo.tutorial.com/SoapCalculator/loginResponse")
-    public boolean login(
-        @WebParam(name = "arg0", targetNamespace = "")
-        String arg0,
-        @WebParam(name = "arg1", targetNamespace = "")
-        String arg1);
-
 }

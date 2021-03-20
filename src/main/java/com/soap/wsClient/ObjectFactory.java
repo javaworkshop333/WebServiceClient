@@ -24,9 +24,7 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _Login_QNAME = new QName("http://demo.tutorial.com/", "login");
     private final static QName _AddResponse_QNAME = new QName("http://demo.tutorial.com/", "addResponse");
-    private final static QName _LoginResponse_QNAME = new QName("http://demo.tutorial.com/", "loginResponse");
     private final static QName _Add_QNAME = new QName("http://demo.tutorial.com/", "add");
 
     /**
@@ -45,36 +43,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link LoginResponse }
-     * 
-     */
-    public LoginResponse createLoginResponse() {
-        return new LoginResponse();
-    }
-
-    /**
      * Create an instance of {@link AddResponse }
      * 
      */
     public AddResponse createAddResponse() {
         return new AddResponse();
-    }
-
-    /**
-     * Create an instance of {@link Login }
-     * 
-     */
-    public Login createLogin() {
-        return new Login();
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Login }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://demo.tutorial.com/", name = "login")
-    public JAXBElement<Login> createLogin(Login value) {
-        return new JAXBElement<Login>(_Login_QNAME, Login.class, null, value);
     }
 
     /**
@@ -84,15 +57,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://demo.tutorial.com/", name = "addResponse")
     public JAXBElement<AddResponse> createAddResponse(AddResponse value) {
         return new JAXBElement<AddResponse>(_AddResponse_QNAME, AddResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link LoginResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://demo.tutorial.com/", name = "loginResponse")
-    public JAXBElement<LoginResponse> createLoginResponse(LoginResponse value) {
-        return new JAXBElement<LoginResponse>(_LoginResponse_QNAME, LoginResponse.class, null, value);
     }
 
     /**

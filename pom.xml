@@ -61,7 +61,7 @@
 					<execution>
 						<configuration>
 							<wsdlUrls>
-								<wsdlUrl>http://localhost:7777/soap?wsdl</wsdlUrl>
+								<wsdlUrl>http://localhost:9999/calculator?wsdl</wsdlUrl>
 							</wsdlUrls>
 							<packageName>com.soap.wsClient</packageName>
 							<keep>true</keep>
